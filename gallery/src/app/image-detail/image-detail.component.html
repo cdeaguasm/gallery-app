@@ -1,3 +1,7 @@
-<p>
-  image-detail works!
-</p>
+<div class="row" *ngIf="imageUrl">
+  <div class=col-md-12>
+    <div class="text-center">
+      <img [src]="imageUrl" class="rounded img-fluid" alt="Image gallery">
+    </div>
+  </div>
+</div>

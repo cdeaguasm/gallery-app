@@ -4,6 +4,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { UploadComponent } from './upload/upload.component';
 import { ImageDetailComponent } from './image-detail/image-detail.component';
 import { LoginComponent } from './login/login.component';
+import { AuthenticationGuard } from './services/authentication.guard';
 
 const routes: Routes = [
   { path: 'gallery', component: GalleryComponent, canActivate: [AuthenticationGuard] },
